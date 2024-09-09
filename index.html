@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainable Community Hub</title>
+  <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+  <!-- Header dan Navigasi -->
+  <header>
+    <h1>Sustainable Community Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#donasi-relawan">Donasi & Relawan</a></li>
+        <li><a href="#barang-bekas">Barang Bekas</a></li>
+        <li><a href="#forum">Forum Diskusi</a></li>
+        <li><a href="#kalender">Kalender Kegiatan</a></li>
+        <li><a href="#peta">Peta Lokasi</a></li>
+        <li><a href="#edukasi">Edukasi SDGs</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section untuk Fitur CRUD 1: Donasi & Relawan -->
+  <section id="donasi-relawan">
+    <h2>Pengelolaan Kegiatan Donasi dan Relawan</h2>
+    <form id="donasi-form">
+      <input type="text" placeholder="Nama Proyek" required>
+      <textarea placeholder="Deskripsi Proyek" required></textarea>
+      <input type="date" placeholder="Tanggal Kegiatan" required>
+      <button type="submit">Buat Proyek</button>
+    </form>
+    <div id="proyek-list">
+      <!-- Daftar proyek akan ditampilkan di sini -->
+    </div>
+  </section>
+
+  <!-- Section untuk Fitur CRUD 2: Barang Bekas -->
+  <section id="barang-bekas">
+    <h2>Sistem Pengelolaan Barang Bekas</h2>
+    <form id="barang-form">
+      <input type="text" placeholder="Nama Barang" required>
+      <textarea placeholder="Deskripsi Barang" required></textarea>
+      <input type="file" required>
+      <button type="submit">Unggah Barang</button>
+    </form>
+    <div id="barang-list">
+      <!-- Daftar barang bekas akan ditampilkan di sini -->
+    </div>
+  </section>
+
+  <!-- Section untuk Fitur Non-CRUD: Forum Diskusi -->
+  <section id="forum">
+    <h2>Forum Diskusi Komunitas</h2>
+    <div id="forum-list">
+      <!-- Daftar diskusi akan ditampilkan di sini -->
+    </div>
+    <form id="forum-form">
+      <input type="text" placeholder="Judul Diskusi" required>
+      <textarea placeholder="Tulis sesuatu..." required></textarea>
+      <button type="submit">Posting</button>
+    </form>
+  </section>
+
+  <!-- Section untuk Fitur Non-CRUD: Kalender Kegiatan -->
+  <section id="kalender">
+    <h2>Kalender Kegiatan Komunitas</h2>
+    <div id="kalender-view">
+      <!-- Kalender kegiatan akan ditampilkan di sini -->
+    </div>
+  </section>
+
+  <!-- Section untuk Fitur Non-CRUD: Peta Lokasi Inisiatif Hijau -->
+  <section id="peta">
+    <h2>Peta Lokasi Inisiatif Hijau</h2>
+    <div id="peta-view">
+      <!-- Peta interaktif akan ditampilkan di sini -->
+    </div>
+  </section>
+
+  <!-- Section untuk Fitur Non-CRUD: Edukasi SDGs -->
+  <section id="edukasi">
+    <h2>Edukasi dan Sumber Daya tentang SDGs</h2>
+    <div id="edukasi-list">
+      <!-- Artikel, video, atau sumber edukasi akan ditampilkan di sini -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Sustainable Community Hub</p>
+  </footer>
+
+  <script src="js\script.js"></script>
+</body>
+</html>
